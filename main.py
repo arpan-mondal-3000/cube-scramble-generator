@@ -10,5 +10,8 @@ for i in range(1, n):
     if move == prev_move:
         n += 1
         continue
+    elif move == prev_move + "'":
+        n += 1
+        continue
     prev_move = move
     print(move, end=" ")
